@@ -3,7 +3,7 @@
     "promptValues": {
       "packageName": "com.outsider.javapackage"
     },
-    "jhipsterVersion": "4.7.0",
+    "jhipsterVersion": "4.9.0",
     "baseName": "outsiderTrading",
     "packageName": "com.outsider.javapackage",
     "packageFolder": "com/outsider/javapackage",
