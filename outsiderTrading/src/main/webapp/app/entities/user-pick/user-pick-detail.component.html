@@ -1,0 +1,49 @@
+
+<div *ngIf="userPick">
+    <h2><span>User Pick</span> {{userPick.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span>Symbl</span></dt>
+        <dd>
+            <span>{{userPick.symbl}}</span>
+        </dd>
+        <dt><span>Own</span></dt>
+        <dd>
+            <span>{{userPick.own}}</span>
+        </dd>
+        <dt><span>Entry Price</span></dt>
+        <dd>
+            <span>{{userPick.entryPrice}}</span>
+        </dd>
+        <dt><span>Up</span></dt>
+        <dd>
+            <span>{{userPick.up}}</span>
+        </dd>
+        <dt><span>Target</span></dt>
+        <dd>
+            <span>{{userPick.target}}</span>
+        </dd>
+        <dt><span>Time</span></dt>
+        <dd>
+            <span>{{userPick.time}}</span>
+        </dd>
+        <dt><span>User</span></dt>
+        <dd>
+            {{userPick.user?.login}}
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'user-pick/'+ userPick.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span> Edit</span>
+    </button>
+</div>
