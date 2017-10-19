@@ -21,4 +21,7 @@ public class StockService {
         return this.stockDao.getStockById(id);
     }
 
+    public void removeStockById(int id) {
+        this.stockDao.removeStockById(id);
+    }
 }

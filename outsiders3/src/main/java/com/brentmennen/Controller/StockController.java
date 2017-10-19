@@ -27,4 +27,9 @@ public class StockController {
         return stockService.getStockById(id);
     }
 
+    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+    public void deleteStockById(@PathVariable("id") int id) {
+        stockService.removeStockById(id);
+    }
+
 }

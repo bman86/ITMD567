@@ -32,4 +32,7 @@ public class StockDao {
         return this.stocks.get(id);
     }
 
+    public void removeStockById(int id) {
+        this.stocks.remove(id);
+    }
 }
