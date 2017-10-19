@@ -36,8 +36,14 @@ public class PostController {
     }
 
     @RequestMapping(value = "/create", method = RequestMethod.POST)
-    public ModelAndView create(@RequestParam("message") String comment) {
-        repository.save(new Post(comment));
+    public ModelAndView create(@RequestParam("stkSymbl") String stkSymbl,
+                               @RequestParam("own") Boolean own,
+                               @RequestParam("entry") Double entry,
+                               @RequestParam("up") Boolean up,
+                               @RequestParam("target") Double target,
+                               @RequestParam("time") String time,
+                               Post()) {
+        Post = repository.save(new Post);
         return new ModelAndView("redirect:/posts");
     }
 
