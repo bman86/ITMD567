@@ -3,10 +3,8 @@ package com.brentmennen.Controller;
 import com.brentmennen.Entity.Stock;
 import com.brentmennen.Service.StockService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 
@@ -32,4 +30,13 @@ public class StockController {
         stockService.removeStockById(id);
     }
 
+    @RequestMapping(method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
+    public void deleteStockById(@RequestBody Stock stock) {
+        stockService.updateStock(stock);
+    }
+
+    @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+    public void insertStock(@RequestBody Stock stock) {
+        stockService.insertStock(stock);
+    }
 }
