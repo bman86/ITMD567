@@ -18,9 +18,9 @@ public class StockDaoImpl implements StockDao {
 
         stocks = new HashMap<Integer, Stock>(){
             {
-                put(1, new Stock(1, "aapl", "Long Term"));
-                put(2, new Stock(2, "amzn", "Short Term"));
-                put(3, new Stock(3, "chk", "Mid Term"));
+                put(1, new Stock(1, "aapl", true, 145.00, true, 200.00, "Long Term"));
+                put(2, new Stock(2, "amzn", true, 200.00, true, 400.00, "Short Term"));
+                put(3, new Stock(3, "chk", false, 2.00, true, 7.50, "Mid Term"));
 
             }
         };
@@ -45,6 +45,10 @@ public class StockDaoImpl implements StockDao {
     public void updateStock(Stock stock) {
         Stock s = stocks.get(stock.getId());
         s.setSymbl(stock.getSymbl());
+        s.setOwn(stock.getOwn());
+        s.setEntryPrice(stock.getEntryPrice());
+        s.setUp(stock.getUp());
+        s.setTarget(stock.getTarget());
         s.setTime(stock.getTime());
         stocks.put(stock.getId(), stock);
     }
@@ -54,3 +58,4 @@ public class StockDaoImpl implements StockDao {
         this.stocks.put(stock.getId(), stock);
     }
 }
+
