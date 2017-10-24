@@ -12,7 +12,7 @@ import java.util.Collection;
 public class StockService {
 
     @Autowired
-    @Qualifier("firstDao")
+    @Qualifier("postgres")
     private StockDao stockDao;
 
     public Collection<Stock> getAllStocks(){
