@@ -34,14 +34,11 @@
             <artifactId>postgresql</artifactId>
             <version>42.1.4</version>
         </dependency>
-
-
-
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-            <version>5.0.0.RELEASE</version>
+            <version>4.1.4.RELEASE</version>
         </dependency>
 
     </dependencies>

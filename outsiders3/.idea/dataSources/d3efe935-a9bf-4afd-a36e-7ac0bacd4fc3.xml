@@ -18,8 +18,7 @@
     </database>
     <schema id="6" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2017-10-23.22:11:35.154</IntrospectionTimestamp>
-      <IntrospectionStateNumber>6263</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2017-10-25.18:36:05.173</IntrospectionTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -38,75 +37,5 @@
     <schema id="11" parent="2" name="information_schema">
       <ObjectId>13034</ObjectId>
     </schema>
-    <sequence id="12" parent="6" name="outsiders_id_seq">
-      <ObjectId>16409</ObjectId>
-      <StateNumber>6262</StateNumber>
-      <SequenceIdentity>1</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <table id="13" parent="6" name="outsiders">
-      <ObjectId>16411</ObjectId>
-      <StateNumber>6262</StateNumber>
-    </table>
-    <column id="14" parent="13" name="id">
-      <Position>1</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>6262</StateNumber>
-      <SequenceName>outsiders_id_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;outsiders_id_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <column id="15" parent="13" name="symbl">
-      <Position>2</Position>
-      <DataType>varchar(20)|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>6262</StateNumber>
-    </column>
-    <column id="16" parent="13" name="own">
-      <Position>3</Position>
-      <DataType>boolean|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>6262</StateNumber>
-    </column>
-    <column id="17" parent="13" name="entryprice">
-      <Position>4</Position>
-      <DataType>double precision|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>6262</StateNumber>
-    </column>
-    <column id="18" parent="13" name="up">
-      <Position>5</Position>
-      <DataType>boolean|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>6262</StateNumber>
-    </column>
-    <column id="19" parent="13" name="target">
-      <Position>6</Position>
-      <DataType>double precision|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>6262</StateNumber>
-    </column>
-    <column id="20" parent="13" name="time">
-      <Position>7</Position>
-      <DataType>varchar(20)|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>6262</StateNumber>
-    </column>
-    <index id="21" parent="13" name="outsiders_id_uindex">
-      <ObjectId>16417</ObjectId>
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <index id="22" parent="13" name="outsiders_pkey">
-      <ObjectId>16415</ObjectId>
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="23" parent="13" name="outsiders_pkey">
-      <ObjectId>16416</ObjectId>
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>outsiders_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
   </database-model>
 </dataSource>
