@@ -1,6 +1,18 @@
 package com.brentmennen.Dao;
 
 import com.brentmennen.Entity.Live;
-import org.springframework.data.repository.CrudRepository;
+import com.brentmennen.Entity.Stock;
 
-public interface LiveRepository extends CrudRepository<Live,Long> {}
+import java.util.Collection;
+
+public interface LiveRepository {
+    Collection<Live> getAllLive();
+
+    Stock getLiveById(int id);
+
+    void removeLiveById(int id);
+
+    void updateLive(Stock stock);
+
+    void insertLiveToDb(Stock stock);
+}

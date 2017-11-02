@@ -13,11 +13,13 @@ public class LiveController {
     private LiveService liveService;
 
     public LiveController(LiveService liveService) {
+
         this.liveService = liveService;
     }
 
     @GetMapping("/list")
     public Iterable<Live> list() {
+
         return liveService.list();
     }
 
