@@ -1,13 +1,152 @@
 package com.brentmennen.Entity;
 
+        import org.apache.commons.lang3.builder.ToStringBuilder;
 
+        import java.util.HashMap;
+        import java.util.Map;
+        import com.fasterxml.jackson.annotation.JsonAnyGetter;
+        import com.fasterxml.jackson.annotation.JsonAnySetter;
+        import com.fasterxml.jackson.annotation.JsonIgnore;
+        import com.fasterxml.jackson.annotation.JsonInclude;
+        import com.fasterxml.jackson.annotation.JsonProperty;
+        import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+        import javax.persistence.Embeddable;
+        import javax.persistence.Embedded;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+        "1. Information",
+        "2. Symbol",
+        "3. Last Refreshed",
+        "4. Interval",
+        "5. Output Size",
+        "6. Time Zone"
+})
+@Embeddable
+public class MetaData {
+
+    @JsonProperty("1. Information")
+    private String _1Information;
+    @JsonProperty("2. Symbol")
+    private String _2Symbol;
+    @JsonProperty("3. Last Refreshed")
+    private String _3LastRefreshed;
+    @JsonProperty("4. Interval")
+    private String _4Interval;
+    @JsonProperty("5. Output Size")
+    private String _5OutputSize;
+    @JsonProperty("6. Time Zone")
+    private String _6TimeZone;
+    @JsonIgnore
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+    @JsonProperty("1. Information")
+    public String get1Information() {
+        return _1Information;
+    }
+
+    @JsonProperty("1. Information")
+    public void set1Information(String _1Information) {
+        this._1Information = _1Information;
+    }
+
+    @JsonProperty("2. Symbol")
+    public String get2Symbol() {
+        return _2Symbol;
+    }
+
+    @JsonProperty("2. Symbol")
+    public void set2Symbol(String _2Symbol) {
+        this._2Symbol = _2Symbol;
+    }
+
+    @JsonProperty("3. Last Refreshed")
+    public String get3LastRefreshed() {
+        return _3LastRefreshed;
+    }
+
+    @JsonProperty("3. Last Refreshed")
+    public void set3LastRefreshed(String _3LastRefreshed) {
+        this._3LastRefreshed = _3LastRefreshed;
+    }
+
+    @JsonProperty("4. Interval")
+    public String get4Interval() {
+        return _4Interval;
+    }
+
+    @JsonProperty("4. Interval")
+    public void set4Interval(String _4Interval) {
+        this._4Interval = _4Interval;
+    }
+
+    @JsonProperty("5. Output Size")
+    public String get5OutputSize() {
+        return _5OutputSize;
+    }
+
+    @JsonProperty("5. Output Size")
+    public void set5OutputSize(String _5OutputSize) {
+        this._5OutputSize = _5OutputSize;
+    }
+
+    @JsonProperty("6. Time Zone")
+    public String get6TimeZone() {
+        return _6TimeZone;
+    }
+
+    @JsonProperty("6. Time Zone")
+    public void set6TimeZone(String _6TimeZone) {
+        this._6TimeZone = _6TimeZone;
+    }
+
+    @JsonAnyGetter
+    public Map<String, Object> getAdditionalProperties() {
+        return this.additionalProperties;
+    }
+
+    @JsonAnySetter
+    public void setAdditionalProperty(String name, Object value) {
+        this.additionalProperties.put(name, value);
+    }
+
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this).append("_1Information", _1Information).append("_2Symbol", _2Symbol).append("_3LastRefreshed", _3LastRefreshed).append("_4Interval", _4Interval).append("_5OutputSize", _5OutputSize).append("_6TimeZone", _6TimeZone).append("additionalProperties", additionalProperties).toString();
+    }
+
+    public MetaData() {}
+
+    public MetaData(String _1Information, String _2Symbol, String _3LastRefreshed, String _4Interval, String _5OutputSize, String _6TimeZone, Map<String, Object> additionalProperties) {
+        this._1Information = _1Information;
+        this._2Symbol = _2Symbol;
+        this._3LastRefreshed = _3LastRefreshed;
+        this._4Interval = _4Interval;
+        this._5OutputSize = _5OutputSize;
+        this._6TimeZone = _6TimeZone;
+        this.additionalProperties = additionalProperties;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.AllArgsConstructor;
+import javax.persistence.Embeddable;
 
 
-@AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
+@Embeddable
 public class MetaData{
 
     @JsonProperty("1. Information")
@@ -22,6 +161,18 @@ public class MetaData{
     private String outputSize;
     @JsonProperty("6. Time Zone")
     private String timeZone;
+
+    //all args constructor
+    public MetaData(String information, String symbol, String refreshed, String interval, String outputSize, String timeZone) {
+        this.information = information;
+        this.symbol = symbol;
+        this.refreshed = refreshed;
+        this.interval = interval;
+        this.outputSize = outputSize;
+        this.timeZone = timeZone;
+    }
+
+    public MetaData() {}
 
     public String getInformation() {
         return information;
@@ -72,3 +223,4 @@ public class MetaData{
     }
 }
 
+*/
