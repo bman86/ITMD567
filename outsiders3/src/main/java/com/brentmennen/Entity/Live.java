@@ -2,17 +2,14 @@ package com.brentmennen.Entity;
 
 import java.util.HashMap;
 import java.util.Map;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+import com.fasterxml.jackson.annotation.*;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
         "Meta Data",
@@ -20,7 +17,7 @@ import javax.persistence.*;
 })
 @Entity
 public class Live {
-
+/*
     @GenericGenerator(
             name = "SequenceGenerator",
             strategy = "org.hibernate.id.enhanced.SequenceStyleGenerator",
@@ -29,9 +26,11 @@ public class Live {
                     @org.hibernate.annotations.Parameter(name = "initial_value", value = "1000"),
                     @org.hibernate.annotations.Parameter(name = "increment_size", value = "1")
             }
-    )
+    )*/
     @Id
-    @GeneratedValue(generator = "SequenceGenerator")
+    //@GeneratedValue(generator = "SequenceGenerator")
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @Column(name="ID",unique=true,nullable=false, columnDefinition = "serial")
     private Long id;
     @JsonProperty("Meta Data")
     @Embedded
@@ -39,8 +38,8 @@ public class Live {
     @JsonProperty("Time Series (1min)")
     @Embedded
     private TimeSeries1min timeSeries1min;
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    //@JsonIgnore
+    //private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     public Long getId() {
         return id;
@@ -70,27 +69,27 @@ public class Live {
         this.timeSeries1min = timeSeries1min;
     }
 
-    @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
+    //@JsonAnyGetter
+    //public Map<String, Object> getAdditionalProperties() {
+      //  return this.additionalProperties;
+    //}
 
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
-    }
+    //@JsonAnySetter
+    //public void setAdditionalProperty(String name, Object value) {
+      //  this.additionalProperties.put(name, value);
+    //}
 
     public Live() {}
 
-    public Live(MetaData metaData, TimeSeries1min timeSeries1min, Map<String, Object> additionalProperties) {
+    public Live(MetaData metaData, TimeSeries1min timeSeries1min) {
+        super();
         this.metaData = metaData;
         this.timeSeries1min = timeSeries1min;
-        this.additionalProperties = additionalProperties;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("metaData", metaData).append("timeSeries1min", timeSeries1min).append("additionalProperties", additionalProperties).toString();
+        return new ToStringBuilder(this).append("metaData", metaData).append("timeSeries1min", timeSeries1min).toString();
     }
 
 }

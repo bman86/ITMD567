@@ -2,28 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4d0a559-576a-4497-a784-809ae37b8c3a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/DateTime.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/TimeSeries1min.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/brentmennen/Repository/LiveRepository.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_0_12_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_0_12_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_18.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/brentmennen/Dao/LiveDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/brentmennen/Dao/LiveRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/brentmennen/Dao/TimeSeriesRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/TimeSeries.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/brentmennen/Dao/TimeSeriesRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/brentmennen/Entity/DateTime.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/brentmennen/ScheduledTasks.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/DateTime.java" afterPath="$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/TimeSeries1min.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/brentmennen/Entity/Live.class" afterPath="$PROJECT_DIR$/target/classes/com/brentmennen/Entity/Live.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/brentmennen/Entity/MetaData.class" afterPath="$PROJECT_DIR$/target/classes/com/brentmennen/Entity/MetaData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/brentmennen/Entity/TimeSeries1min.class" afterPath="$PROJECT_DIR$/target/classes/com/brentmennen/Entity/TimeSeries1min.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/brentmennen/Main$1.class" afterPath="$PROJECT_DIR$/target/classes/com/brentmennen/Main$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/brentmennen/Main.class" afterPath="$PROJECT_DIR$/target/classes/com/brentmennen/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/brentmennen/Service/LiveService.class" afterPath="$PROJECT_DIR$/target/classes/com/brentmennen/Service/LiveService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outsiders3.iml" afterPath="$PROJECT_DIR$/outsiders3.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/brentmennen/Controller/LiveController.java" afterPath="$PROJECT_DIR$/src/main/java/com/brentmennen/Controller/LiveController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/Live.java" afterPath="$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/Live.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/MetaData.java" afterPath="$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/MetaData.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/brentmennen/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/brentmennen/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/brentmennen/ScheduledTasks.java" afterPath="$PROJECT_DIR$/src/main/java/com/brentmennen/ScheduledTasks.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/brentmennen/Service/LiveService.java" afterPath="$PROJECT_DIR$/src/main/java/com/brentmennen/Service/LiveService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -66,34 +58,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Live.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Live.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/Live.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            <state relative-caret-position="8">
+              <caret line="19" column="2" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1502#1518#0" expanded="true" />
-                <element signature="e#1547#1548#0" expanded="true" />
-                <element signature="e#1572#1573#0" expanded="true" />
-                <element signature="e#1606#1607#0" expanded="true" />
-                <element signature="e#1634#1635#0" expanded="true" />
-                <element signature="e#1702#1703#0" expanded="true" />
-                <element signature="e#1733#1734#0" expanded="true" />
-                <element signature="e#1814#1815#0" expanded="true" />
-                <element signature="e#1854#1855#0" expanded="true" />
-                <element signature="e#1943#1944#0" expanded="true" />
-                <element signature="e#1980#1981#0" expanded="true" />
-                <element signature="e#2088#2089#0" expanded="true" />
-                <element signature="e#2140#2141#0" expanded="true" />
-                <element signature="e#2219#2220#0" expanded="true" />
-                <element signature="e#2267#2268#0" expanded="true" />
-                <element signature="e#2354#2355#0" expanded="true" />
-                <element signature="e#2412#2413#0" expanded="true" />
-                <marker date="1509971256000" expanded="false" signature="3784:3795" ph=" { " />
-                <marker date="1509971256000" expanded="false" signature="3811:3817" ph=" }" />
-                <marker date="1509971256000" expanded="false" signature="3865:3876" ph=" { " />
-                <marker date="1509971256000" expanded="false" signature="3901:3907" ph=" }" />
+                <element signature="e#1450#1451#0" expanded="true" />
+                <element signature="e#1475#1476#0" expanded="true" />
+                <element signature="e#1509#1510#0" expanded="true" />
+                <element signature="e#1537#1538#0" expanded="true" />
+                <element signature="e#1605#1606#0" expanded="true" />
+                <element signature="e#1636#1637#0" expanded="true" />
+                <element signature="e#1717#1718#0" expanded="true" />
+                <element signature="e#1757#1758#0" expanded="true" />
+                <element signature="e#1846#1847#0" expanded="true" />
+                <element signature="e#1883#1884#0" expanded="true" />
+                <element signature="e#1991#1992#0" expanded="true" />
+                <element signature="e#2043#2044#0" expanded="true" />
+                <marker date="1510022327000" expanded="false" signature="3567:3578" ph=" { " />
+                <marker date="1510022327000" expanded="false" signature="3594:3600" ph=" }" />
+                <marker date="1510022327000" expanded="false" signature="3648:3659" ph=" { " />
+                <marker date="1510022327000" expanded="false" signature="3684:3690" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -114,12 +101,13 @@
       <file leaf-file-name="LiveService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/Service/LiveService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+            <state relative-caret-position="266">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#497#498#0" expanded="true" />
                 <element signature="e#545#546#0" expanded="true" />
+                <element signature="e#629#630#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,32 +123,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LiveRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/Repository/LiveRepository.java">
+      <file leaf-file-name="nowstock.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/nowstock.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PostgresStockDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/Dao/PostgresStockDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-701">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1509062596000" expanded="true" signature="1257:1314" ph="SELECT id, s... " />
-                <marker date="1509062596000" expanded="true" signature="1257:1323" ph="SELECT id, s... outsiders" />
-                <marker date="1509062596000" expanded="true" signature="1515:1594" ph="SELECT id, s... outsiders" />
-                <marker date="1509062596000" expanded="true" signature="1799:1833" ph="DELETE FROM " />
-                <marker date="1509062596000" expanded="true" signature="1966:2064" ph="UPDATE symbl... " />
-                <marker date="1509062596000" expanded="true" signature="2581:2671" ph="INSERT INTO outsiders... " />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -168,76 +136,30 @@
       <file leaf-file-name="TimeSeries1min.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/TimeSeries1min.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="115">
+              <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#857#873#0" expanded="true" />
-                <element signature="e#942#943#0" expanded="true" />
-                <element signature="e#973#974#0" expanded="true" />
-                <element signature="e#1053#1054#0" expanded="true" />
-                <element signature="e#1093#1094#0" expanded="true" />
-                <element signature="e#1172#1173#0" expanded="true" />
-                <element signature="e#1220#1221#0" expanded="true" />
-                <element signature="e#1307#1308#0" expanded="true" />
-                <element signature="e#1365#1366#0" expanded="true" />
-                <marker date="1509969375000" expanded="false" signature="2346:2357" ph=" { " />
-                <marker date="1509969375000" expanded="false" signature="2369:2375" ph=" }" />
-                <marker date="1509969375000" expanded="false" signature="2413:2424" ph=" { " />
-                <marker date="1509969375000" expanded="false" signature="2441:2447" ph=" }" />
-                <marker date="1509969375000" expanded="false" signature="2476:2487" ph=" { " />
-                <marker date="1509969375000" expanded="false" signature="2499:2505" ph=" }" />
-                <marker date="1509969375000" expanded="false" signature="2543:2554" ph=" { " />
-                <marker date="1509969375000" expanded="false" signature="2571:2577" ph=" }" />
-                <marker date="1509969375000" expanded="false" signature="2605:2616" ph=" { " />
-                <marker date="1509969375000" expanded="false" signature="2627:2633" ph=" }" />
-                <marker date="1509969375000" expanded="false" signature="2669:2680" ph=" { " />
-                <marker date="1509969375000" expanded="false" signature="2695:2701" ph=" }" />
-                <marker date="1509969375000" expanded="false" signature="2731:2742" ph=" { " />
-                <marker date="1509969375000" expanded="false" signature="2755:2761" ph=" }" />
-                <marker date="1509969375000" expanded="false" signature="2801:2812" ph=" { " />
-                <marker date="1509969375000" expanded="false" signature="2831:2837" ph=" }" />
-                <marker date="1509969375000" expanded="false" signature="2868:2879" ph=" { " />
-                <marker date="1509969375000" expanded="false" signature="2893:2899" ph=" }" />
-                <marker date="1509969375000" expanded="false" signature="2941:2952" ph=" { " />
-                <marker date="1509969375000" expanded="false" signature="2973:2979" ph=" }" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DateTime.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/DateTime.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1106#1122#0" expanded="true" />
-                <element signature="e#1185#1186#0" expanded="true" />
-                <element signature="e#1214#1215#0" expanded="true" />
-                <element signature="e#1286#1287#0" expanded="true" />
-                <element signature="e#1322#1323#0" expanded="true" />
-                <element signature="e#1383#1384#0" expanded="true" />
-                <element signature="e#1412#1413#0" expanded="true" />
-                <element signature="e#1484#1485#0" expanded="true" />
-                <element signature="e#1520#1521#0" expanded="true" />
-                <element signature="e#1579#1580#0" expanded="true" />
-                <element signature="e#1607#1608#0" expanded="true" />
-                <element signature="e#1676#1677#0" expanded="true" />
-                <element signature="e#1710#1711#0" expanded="true" />
-                <element signature="e#1773#1774#0" expanded="true" />
-                <element signature="e#1803#1804#0" expanded="true" />
-                <element signature="e#1878#1879#0" expanded="true" />
-                <element signature="e#1916#1917#0" expanded="true" />
-                <element signature="e#1981#1982#0" expanded="true" />
-                <element signature="e#2012#2013#0" expanded="true" />
-                <element signature="e#2090#2091#0" expanded="true" />
-                <element signature="e#2130#2131#0" expanded="true" />
-                <element signature="e#2209#2210#0" expanded="true" />
-                <element signature="e#2257#2258#0" expanded="true" />
-                <element signature="e#2344#2345#0" expanded="true" />
-                <element signature="e#2402#2403#0" expanded="true" />
+                <element signature="e#955#956#0" expanded="true" />
+                <element signature="e#984#985#0" expanded="true" />
+                <element signature="e#1056#1057#0" expanded="true" />
+                <element signature="e#1092#1093#0" expanded="true" />
+                <element signature="e#1153#1154#0" expanded="true" />
+                <element signature="e#1182#1183#0" expanded="true" />
+                <element signature="e#1254#1255#0" expanded="true" />
+                <element signature="e#1290#1291#0" expanded="true" />
+                <element signature="e#1349#1350#0" expanded="true" />
+                <element signature="e#1377#1378#0" expanded="true" />
+                <element signature="e#1446#1447#0" expanded="true" />
+                <element signature="e#1480#1481#0" expanded="true" />
+                <element signature="e#1543#1544#0" expanded="true" />
+                <element signature="e#1573#1574#0" expanded="true" />
+                <element signature="e#1648#1649#0" expanded="true" />
+                <element signature="e#1686#1687#0" expanded="true" />
+                <element signature="e#1751#1752#0" expanded="true" />
+                <element signature="e#1782#1783#0" expanded="true" />
+                <element signature="e#1860#1861#0" expanded="true" />
+                <element signature="e#1900#1901#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -246,8 +168,20 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="50">
+              <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScheduledTasks.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/ScheduledTasks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -258,63 +192,58 @@
       <file leaf-file-name="MetaData.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/MetaData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+            <state relative-caret-position="185">
+              <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1366#1382#0" expanded="true" />
-                <element signature="e#1459#1460#0" expanded="true" />
-                <element signature="e#1495#1496#0" expanded="true" />
-                <element signature="e#1588#1589#0" expanded="true" />
-                <element signature="e#1638#1639#0" expanded="true" />
-                <element signature="e#1703#1704#0" expanded="true" />
-                <element signature="e#1734#1735#0" expanded="true" />
-                <element signature="e#1812#1813#0" expanded="true" />
-                <element signature="e#1852#1853#0" expanded="true" />
-                <element signature="e#1932#1933#0" expanded="true" />
-                <element signature="e#1970#1971#0" expanded="true" />
-                <element signature="e#2070#2071#0" expanded="true" />
-                <element signature="e#2124#2125#0" expanded="true" />
-                <element signature="e#2193#2194#0" expanded="true" />
-                <element signature="e#2226#2227#0" expanded="true" />
-                <element signature="e#2310#2311#0" expanded="true" />
-                <element signature="e#2354#2355#0" expanded="true" />
-                <element signature="e#2428#2429#0" expanded="true" />
-                <element signature="e#2463#2464#0" expanded="true" />
-                <element signature="e#2554#2555#0" expanded="true" />
-                <element signature="e#2602#2603#0" expanded="true" />
-                <element signature="e#2672#2673#0" expanded="true" />
-                <element signature="e#2705#2706#0" expanded="true" />
-                <element signature="e#2790#2791#0" expanded="true" />
-                <element signature="e#2834#2835#0" expanded="true" />
-                <element signature="e#2913#2914#0" expanded="true" />
-                <element signature="e#2961#2962#0" expanded="true" />
-                <element signature="e#3048#3049#0" expanded="true" />
-                <element signature="e#3106#3107#0" expanded="true" />
-                <marker date="1509969321000" expanded="false" signature="5074:5085" ph=" { " />
-                <marker date="1509969321000" expanded="false" signature="5104:5110" ph=" }" />
-                <marker date="1509969321000" expanded="false" signature="5162:5173" ph=" { " />
-                <marker date="1509969321000" expanded="false" signature="5204:5210" ph=" }" />
-                <marker date="1509969321000" expanded="false" signature="5241:5252" ph=" { " />
-                <marker date="1509969321000" expanded="false" signature="5266:5272" ph=" }" />
-                <marker date="1509969321000" expanded="false" signature="5314:5325" ph=" { " />
-                <marker date="1509969321000" expanded="false" signature="5346:5352" ph=" }" />
-                <marker date="1509969321000" expanded="false" signature="5386:5397" ph=" { " />
-                <marker date="1509969321000" expanded="false" signature="5414:5420" ph=" }" />
-                <marker date="1509969321000" expanded="false" signature="5468:5479" ph=" { " />
-                <marker date="1509969321000" expanded="false" signature="5506:5512" ph=" }" />
-                <marker date="1509969321000" expanded="false" signature="5545:5556" ph=" { " />
-                <marker date="1509969321000" expanded="false" signature="5572:5578" ph=" }" />
-                <marker date="1509969321000" expanded="false" signature="5624:5635" ph=" { " />
-                <marker date="1509969321000" expanded="false" signature="5660:5666" ph=" }" />
-                <marker date="1509969321000" expanded="false" signature="5701:5712" ph=" { " />
-                <marker date="1509969321000" expanded="false" signature="5730:5736" ph=" }" />
-                <marker date="1509969321000" expanded="false" signature="5786:5797" ph=" { " />
-                <marker date="1509969321000" expanded="false" signature="5826:5832" ph=" }" />
-                <marker date="1509969321000" expanded="false" signature="5865:5876" ph=" { " />
-                <marker date="1509969321000" expanded="false" signature="5892:5898" ph=" }" />
-                <marker date="1509969321000" expanded="false" signature="5944:5955" ph=" { " />
-                <marker date="1509969321000" expanded="false" signature="5980:5986" ph=" }" />
+                <element signature="e#1139#1140#0" expanded="true" />
+                <element signature="e#1175#1176#0" expanded="true" />
+                <element signature="e#1268#1269#0" expanded="true" />
+                <element signature="e#1318#1319#0" expanded="true" />
+                <element signature="e#1383#1384#0" expanded="true" />
+                <element signature="e#1414#1415#0" expanded="true" />
+                <element signature="e#1492#1493#0" expanded="true" />
+                <element signature="e#1532#1533#0" expanded="true" />
+                <element signature="e#1612#1613#0" expanded="true" />
+                <element signature="e#1650#1651#0" expanded="true" />
+                <element signature="e#1750#1751#0" expanded="true" />
+                <element signature="e#1804#1805#0" expanded="true" />
+                <element signature="e#1873#1874#0" expanded="true" />
+                <element signature="e#1906#1907#0" expanded="true" />
+                <element signature="e#1990#1991#0" expanded="true" />
+                <element signature="e#2034#2035#0" expanded="true" />
+                <element signature="e#2108#2109#0" expanded="true" />
+                <element signature="e#2143#2144#0" expanded="true" />
+                <element signature="e#2234#2235#0" expanded="true" />
+                <element signature="e#2282#2283#0" expanded="true" />
+                <element signature="e#2352#2353#0" expanded="true" />
+                <element signature="e#2385#2386#0" expanded="true" />
+                <element signature="e#2470#2471#0" expanded="true" />
+                <element signature="e#2514#2515#0" expanded="true" />
+                <marker date="1510012651000" expanded="false" signature="4626:4637" ph=" { " />
+                <marker date="1510012651000" expanded="false" signature="4656:4662" ph=" }" />
+                <marker date="1510012651000" expanded="false" signature="4714:4725" ph=" { " />
+                <marker date="1510012651000" expanded="false" signature="4756:4762" ph=" }" />
+                <marker date="1510012651000" expanded="false" signature="4793:4804" ph=" { " />
+                <marker date="1510012651000" expanded="false" signature="4818:4824" ph=" }" />
+                <marker date="1510012651000" expanded="false" signature="4866:4877" ph=" { " />
+                <marker date="1510012651000" expanded="false" signature="4898:4904" ph=" }" />
+                <marker date="1510012651000" expanded="false" signature="4938:4949" ph=" { " />
+                <marker date="1510012651000" expanded="false" signature="4966:4972" ph=" }" />
+                <marker date="1510012651000" expanded="false" signature="5020:5031" ph=" { " />
+                <marker date="1510012651000" expanded="false" signature="5058:5064" ph=" }" />
+                <marker date="1510012651000" expanded="false" signature="5097:5108" ph=" { " />
+                <marker date="1510012651000" expanded="false" signature="5124:5130" ph=" }" />
+                <marker date="1510012651000" expanded="false" signature="5176:5187" ph=" { " />
+                <marker date="1510012651000" expanded="false" signature="5212:5218" ph=" }" />
+                <marker date="1510012651000" expanded="false" signature="5253:5264" ph=" { " />
+                <marker date="1510012651000" expanded="false" signature="5282:5288" ph=" }" />
+                <marker date="1510012651000" expanded="false" signature="5338:5349" ph=" { " />
+                <marker date="1510012651000" expanded="false" signature="5378:5384" ph=" }" />
+                <marker date="1510012651000" expanded="false" signature="5417:5428" ph=" { " />
+                <marker date="1510012651000" expanded="false" signature="5444:5450" ph=" }" />
+                <marker date="1510012651000" expanded="false" signature="5496:5507" ph=" { " />
+                <marker date="1510012651000" expanded="false" signature="5532:5538" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -341,6 +270,7 @@
       <find>accept</find>
       <find>array</find>
       <find>example</find>
+      <find>date</find>
       <find>timeS</find>
     </findStrings>
   </component>
@@ -368,7 +298,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/Intraday.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/MonthlyTimeSeries.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/brentmennen/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/brentmennen/ScheduledTasks.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/brentmennen/Controller/liveController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/nowstock.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/brentmennen/Dao/TimeSeriesRepository.java" />
@@ -378,15 +307,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/brentmennen/Repository/RepositoryConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/brentmennen/Repository/RepositoryConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/TimeSeries.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/brentmennen/Service/LiveService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/brentmennen/Controller/LiveController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/brentmennen/Repository/LiveRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/brentmennen/Main.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/MetaData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brentmennen/Service/LiveService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/DateTime.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/TimeSeries1min.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/Live.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brentmennen/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brentmennen/ScheduledTasks.java" />
       </list>
     </option>
   </component>
@@ -437,7 +367,6 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="39" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="785" />
@@ -564,7 +493,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="SearchEverywhereHistoryKey" value="StockRowMapper&#9;PSI&#9;JAVA://com.brentmennen.Dao.PostgresStockDao.StockRowMapper&#10;objectmapper&#9;PSI&#9;JAVA://com.fasterxml.jackson.databind.ObjectMapper&#10;java.io.BufferedInputStream@28565743&#9;PSI&#9;JAVA://java.io.BufferedInputStream&#10;BufferedInputStream&#9;PSI&#9;JAVA://java.io.BufferedInputStream&#10;springcloud&#9;FILE&#9;file:///Users/brentmennen/ITMD567/outsiders3/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_aws_context__spring_cloud_version_.xml" />
+    <property name="SearchEverywhereHistoryKey" value="datetime&#9;FILE&#9;file:///Users/brentmennen/ITMD567/outsiders3/src/main/java/com/brentmennen/Entity/DateTime.java&#10;StockRowMapper&#9;PSI&#9;JAVA://com.brentmennen.Dao.PostgresStockDao.StockRowMapper&#10;objectmapper&#9;PSI&#9;JAVA://com.fasterxml.jackson.databind.ObjectMapper&#10;java.io.BufferedInputStream@28565743&#9;PSI&#9;JAVA://java.io.BufferedInputStream&#10;BufferedInputStream&#9;PSI&#9;JAVA://java.io.BufferedInputStream&#10;springcloud&#9;FILE&#9;file:///Users/brentmennen/ITMD567/outsiders3/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_aws_context__spring_cloud_version_.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.48298067" />
@@ -731,15 +660,15 @@
       <workItem from="1509409197859" duration="754000" />
       <workItem from="1509410221628" duration="14330000" />
       <workItem from="1509503106496" duration="10910000" />
-      <workItem from="1509590584450" duration="27705000" />
+      <workItem from="1509590584450" duration="40633000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119534000" />
+    <option name="totallyTimeSpent" value="132462000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="23" width="1440" height="785" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="785" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -757,7 +686,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37246376" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37246376" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32627118" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -765,6 +694,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22889842" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289855" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -774,7 +704,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -956,16 +885,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/Intraday.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/ScheduledTasks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/Application.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.12.Final/hibernate-core-5.0.12.Final.jar!/org/hibernate/mapping/RootClass.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1067,14 +986,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/nowstock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10605">
-          <caret line="707" column="28" lean-forward="false" selection-start-line="707" selection-start-column="28" selection-end-line="707" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/Controller/StockController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1109,24 +1020,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.8.RELEASE/spring-boot-autoconfigure-1.5.8.RELEASE.jar!/org/springframework/boot/autoconfigure/orm/jpa/JpaBaseConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="92" column="50" lean-forward="false" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/Service/LiveService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        <state relative-caret-position="266">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#497#498#0" expanded="true" />
             <element signature="e#545#546#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1141,186 +1059,152 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.8.RELEASE/spring-boot-autoconfigure-1.5.8.RELEASE.jar!/org/springframework/boot/autoconfigure/orm/jpa/JpaBaseConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="92" column="50" lean-forward="false" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/DateTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1106#1122#0" expanded="true" />
-            <element signature="e#1185#1186#0" expanded="true" />
-            <element signature="e#1214#1215#0" expanded="true" />
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#1322#1323#0" expanded="true" />
-            <element signature="e#1383#1384#0" expanded="true" />
-            <element signature="e#1412#1413#0" expanded="true" />
-            <element signature="e#1484#1485#0" expanded="true" />
-            <element signature="e#1520#1521#0" expanded="true" />
-            <element signature="e#1579#1580#0" expanded="true" />
-            <element signature="e#1607#1608#0" expanded="true" />
-            <element signature="e#1676#1677#0" expanded="true" />
-            <element signature="e#1710#1711#0" expanded="true" />
-            <element signature="e#1773#1774#0" expanded="true" />
-            <element signature="e#1803#1804#0" expanded="true" />
-            <element signature="e#1878#1879#0" expanded="true" />
-            <element signature="e#1916#1917#0" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
-            <element signature="e#2012#2013#0" expanded="true" />
-            <element signature="e#2090#2091#0" expanded="true" />
-            <element signature="e#2130#2131#0" expanded="true" />
-            <element signature="e#2209#2210#0" expanded="true" />
-            <element signature="e#2257#2258#0" expanded="true" />
-            <element signature="e#2344#2345#0" expanded="true" />
-            <element signature="e#2402#2403#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/MetaData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+        <state relative-caret-position="185">
+          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1366#1382#0" expanded="true" />
-            <element signature="e#1459#1460#0" expanded="true" />
-            <element signature="e#1495#1496#0" expanded="true" />
-            <element signature="e#1588#1589#0" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
-            <element signature="e#1703#1704#0" expanded="true" />
-            <element signature="e#1734#1735#0" expanded="true" />
-            <element signature="e#1812#1813#0" expanded="true" />
-            <element signature="e#1852#1853#0" expanded="true" />
-            <element signature="e#1932#1933#0" expanded="true" />
-            <element signature="e#1970#1971#0" expanded="true" />
-            <element signature="e#2070#2071#0" expanded="true" />
-            <element signature="e#2124#2125#0" expanded="true" />
-            <element signature="e#2193#2194#0" expanded="true" />
-            <element signature="e#2226#2227#0" expanded="true" />
-            <element signature="e#2310#2311#0" expanded="true" />
-            <element signature="e#2354#2355#0" expanded="true" />
-            <element signature="e#2428#2429#0" expanded="true" />
-            <element signature="e#2463#2464#0" expanded="true" />
-            <element signature="e#2554#2555#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2672#2673#0" expanded="true" />
-            <element signature="e#2705#2706#0" expanded="true" />
-            <element signature="e#2790#2791#0" expanded="true" />
-            <element signature="e#2834#2835#0" expanded="true" />
-            <element signature="e#2913#2914#0" expanded="true" />
-            <element signature="e#2961#2962#0" expanded="true" />
-            <element signature="e#3048#3049#0" expanded="true" />
-            <element signature="e#3106#3107#0" expanded="true" />
-            <marker date="1509969321000" expanded="false" signature="5074:5085" ph=" { " />
-            <marker date="1509969321000" expanded="false" signature="5104:5110" ph=" }" />
-            <marker date="1509969321000" expanded="false" signature="5162:5173" ph=" { " />
-            <marker date="1509969321000" expanded="false" signature="5204:5210" ph=" }" />
-            <marker date="1509969321000" expanded="false" signature="5241:5252" ph=" { " />
-            <marker date="1509969321000" expanded="false" signature="5266:5272" ph=" }" />
-            <marker date="1509969321000" expanded="false" signature="5314:5325" ph=" { " />
-            <marker date="1509969321000" expanded="false" signature="5346:5352" ph=" }" />
-            <marker date="1509969321000" expanded="false" signature="5386:5397" ph=" { " />
-            <marker date="1509969321000" expanded="false" signature="5414:5420" ph=" }" />
-            <marker date="1509969321000" expanded="false" signature="5468:5479" ph=" { " />
-            <marker date="1509969321000" expanded="false" signature="5506:5512" ph=" }" />
-            <marker date="1509969321000" expanded="false" signature="5545:5556" ph=" { " />
-            <marker date="1509969321000" expanded="false" signature="5572:5578" ph=" }" />
-            <marker date="1509969321000" expanded="false" signature="5624:5635" ph=" { " />
-            <marker date="1509969321000" expanded="false" signature="5660:5666" ph=" }" />
-            <marker date="1509969321000" expanded="false" signature="5701:5712" ph=" { " />
-            <marker date="1509969321000" expanded="false" signature="5730:5736" ph=" }" />
-            <marker date="1509969321000" expanded="false" signature="5786:5797" ph=" { " />
-            <marker date="1509969321000" expanded="false" signature="5826:5832" ph=" }" />
-            <marker date="1509969321000" expanded="false" signature="5865:5876" ph=" { " />
-            <marker date="1509969321000" expanded="false" signature="5892:5898" ph=" }" />
-            <marker date="1509969321000" expanded="false" signature="5944:5955" ph=" { " />
-            <marker date="1509969321000" expanded="false" signature="5980:5986" ph=" }" />
+            <element signature="e#1139#1140#0" expanded="true" />
+            <element signature="e#1175#1176#0" expanded="true" />
+            <element signature="e#1268#1269#0" expanded="true" />
+            <element signature="e#1318#1319#0" expanded="true" />
+            <element signature="e#1383#1384#0" expanded="true" />
+            <element signature="e#1414#1415#0" expanded="true" />
+            <element signature="e#1492#1493#0" expanded="true" />
+            <element signature="e#1532#1533#0" expanded="true" />
+            <element signature="e#1612#1613#0" expanded="true" />
+            <element signature="e#1650#1651#0" expanded="true" />
+            <element signature="e#1750#1751#0" expanded="true" />
+            <element signature="e#1804#1805#0" expanded="true" />
+            <element signature="e#1873#1874#0" expanded="true" />
+            <element signature="e#1906#1907#0" expanded="true" />
+            <element signature="e#1990#1991#0" expanded="true" />
+            <element signature="e#2034#2035#0" expanded="true" />
+            <element signature="e#2108#2109#0" expanded="true" />
+            <element signature="e#2143#2144#0" expanded="true" />
+            <element signature="e#2234#2235#0" expanded="true" />
+            <element signature="e#2282#2283#0" expanded="true" />
+            <element signature="e#2352#2353#0" expanded="true" />
+            <element signature="e#2385#2386#0" expanded="true" />
+            <element signature="e#2470#2471#0" expanded="true" />
+            <element signature="e#2514#2515#0" expanded="true" />
+            <marker date="1510012651000" expanded="false" signature="4626:4637" ph=" { " />
+            <marker date="1510012651000" expanded="false" signature="4656:4662" ph=" }" />
+            <marker date="1510012651000" expanded="false" signature="4714:4725" ph=" { " />
+            <marker date="1510012651000" expanded="false" signature="4756:4762" ph=" }" />
+            <marker date="1510012651000" expanded="false" signature="4793:4804" ph=" { " />
+            <marker date="1510012651000" expanded="false" signature="4818:4824" ph=" }" />
+            <marker date="1510012651000" expanded="false" signature="4866:4877" ph=" { " />
+            <marker date="1510012651000" expanded="false" signature="4898:4904" ph=" }" />
+            <marker date="1510012651000" expanded="false" signature="4938:4949" ph=" { " />
+            <marker date="1510012651000" expanded="false" signature="4966:4972" ph=" }" />
+            <marker date="1510012651000" expanded="false" signature="5020:5031" ph=" { " />
+            <marker date="1510012651000" expanded="false" signature="5058:5064" ph=" }" />
+            <marker date="1510012651000" expanded="false" signature="5097:5108" ph=" { " />
+            <marker date="1510012651000" expanded="false" signature="5124:5130" ph=" }" />
+            <marker date="1510012651000" expanded="false" signature="5176:5187" ph=" { " />
+            <marker date="1510012651000" expanded="false" signature="5212:5218" ph=" }" />
+            <marker date="1510012651000" expanded="false" signature="5253:5264" ph=" { " />
+            <marker date="1510012651000" expanded="false" signature="5282:5288" ph=" }" />
+            <marker date="1510012651000" expanded="false" signature="5338:5349" ph=" { " />
+            <marker date="1510012651000" expanded="false" signature="5378:5384" ph=" }" />
+            <marker date="1510012651000" expanded="false" signature="5417:5428" ph=" { " />
+            <marker date="1510012651000" expanded="false" signature="5444:5450" ph=" }" />
+            <marker date="1510012651000" expanded="false" signature="5496:5507" ph=" { " />
+            <marker date="1510012651000" expanded="false" signature="5532:5538" ph=" }" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/TimeSeries1min.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#857#873#0" expanded="true" />
-            <element signature="e#942#943#0" expanded="true" />
-            <element signature="e#973#974#0" expanded="true" />
-            <element signature="e#1053#1054#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
-            <element signature="e#1220#1221#0" expanded="true" />
-            <element signature="e#1307#1308#0" expanded="true" />
-            <element signature="e#1365#1366#0" expanded="true" />
-            <marker date="1509969375000" expanded="false" signature="2346:2357" ph=" { " />
-            <marker date="1509969375000" expanded="false" signature="2369:2375" ph=" }" />
-            <marker date="1509969375000" expanded="false" signature="2413:2424" ph=" { " />
-            <marker date="1509969375000" expanded="false" signature="2441:2447" ph=" }" />
-            <marker date="1509969375000" expanded="false" signature="2476:2487" ph=" { " />
-            <marker date="1509969375000" expanded="false" signature="2499:2505" ph=" }" />
-            <marker date="1509969375000" expanded="false" signature="2543:2554" ph=" { " />
-            <marker date="1509969375000" expanded="false" signature="2571:2577" ph=" }" />
-            <marker date="1509969375000" expanded="false" signature="2605:2616" ph=" { " />
-            <marker date="1509969375000" expanded="false" signature="2627:2633" ph=" }" />
-            <marker date="1509969375000" expanded="false" signature="2669:2680" ph=" { " />
-            <marker date="1509969375000" expanded="false" signature="2695:2701" ph=" }" />
-            <marker date="1509969375000" expanded="false" signature="2731:2742" ph=" { " />
-            <marker date="1509969375000" expanded="false" signature="2755:2761" ph=" }" />
-            <marker date="1509969375000" expanded="false" signature="2801:2812" ph=" { " />
-            <marker date="1509969375000" expanded="false" signature="2831:2837" ph=" }" />
-            <marker date="1509969375000" expanded="false" signature="2868:2879" ph=" { " />
-            <marker date="1509969375000" expanded="false" signature="2893:2899" ph=" }" />
-            <marker date="1509969375000" expanded="false" signature="2941:2952" ph=" { " />
-            <marker date="1509969375000" expanded="false" signature="2973:2979" ph=" }" />
-          </folding>
+        <state relative-caret-position="129">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/nowstock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/TimeSeries1min.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#955#956#0" expanded="true" />
+            <element signature="e#984#985#0" expanded="true" />
+            <element signature="e#1056#1057#0" expanded="true" />
+            <element signature="e#1092#1093#0" expanded="true" />
+            <element signature="e#1153#1154#0" expanded="true" />
+            <element signature="e#1182#1183#0" expanded="true" />
+            <element signature="e#1254#1255#0" expanded="true" />
+            <element signature="e#1290#1291#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1377#1378#0" expanded="true" />
+            <element signature="e#1446#1447#0" expanded="true" />
+            <element signature="e#1480#1481#0" expanded="true" />
+            <element signature="e#1543#1544#0" expanded="true" />
+            <element signature="e#1573#1574#0" expanded="true" />
+            <element signature="e#1648#1649#0" expanded="true" />
+            <element signature="e#1686#1687#0" expanded="true" />
+            <element signature="e#1751#1752#0" expanded="true" />
+            <element signature="e#1782#1783#0" expanded="true" />
+            <element signature="e#1860#1861#0" expanded="true" />
+            <element signature="e#1900#1901#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/Entity/Live.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        <state relative-caret-position="8">
+          <caret line="19" column="2" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1502#1518#0" expanded="true" />
-            <element signature="e#1547#1548#0" expanded="true" />
-            <element signature="e#1572#1573#0" expanded="true" />
-            <element signature="e#1606#1607#0" expanded="true" />
-            <element signature="e#1634#1635#0" expanded="true" />
-            <element signature="e#1702#1703#0" expanded="true" />
-            <element signature="e#1733#1734#0" expanded="true" />
-            <element signature="e#1814#1815#0" expanded="true" />
-            <element signature="e#1854#1855#0" expanded="true" />
-            <element signature="e#1943#1944#0" expanded="true" />
-            <element signature="e#1980#1981#0" expanded="true" />
-            <element signature="e#2088#2089#0" expanded="true" />
-            <element signature="e#2140#2141#0" expanded="true" />
-            <element signature="e#2219#2220#0" expanded="true" />
-            <element signature="e#2267#2268#0" expanded="true" />
-            <element signature="e#2354#2355#0" expanded="true" />
-            <element signature="e#2412#2413#0" expanded="true" />
-            <marker date="1509971256000" expanded="false" signature="3784:3795" ph=" { " />
-            <marker date="1509971256000" expanded="false" signature="3811:3817" ph=" }" />
-            <marker date="1509971256000" expanded="false" signature="3865:3876" ph=" { " />
-            <marker date="1509971256000" expanded="false" signature="3901:3907" ph=" }" />
+            <element signature="e#1450#1451#0" expanded="true" />
+            <element signature="e#1475#1476#0" expanded="true" />
+            <element signature="e#1509#1510#0" expanded="true" />
+            <element signature="e#1537#1538#0" expanded="true" />
+            <element signature="e#1605#1606#0" expanded="true" />
+            <element signature="e#1636#1637#0" expanded="true" />
+            <element signature="e#1717#1718#0" expanded="true" />
+            <element signature="e#1757#1758#0" expanded="true" />
+            <element signature="e#1846#1847#0" expanded="true" />
+            <element signature="e#1883#1884#0" expanded="true" />
+            <element signature="e#1991#1992#0" expanded="true" />
+            <element signature="e#2043#2044#0" expanded="true" />
+            <marker date="1510022327000" expanded="false" signature="3567:3578" ph=" { " />
+            <marker date="1510022327000" expanded="false" signature="3594:3600" ph=" }" />
+            <marker date="1510022327000" expanded="false" signature="3648:3659" ph=" { " />
+            <marker date="1510022327000" expanded="false" signature="3684:3690" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brentmennen/ScheduledTasks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

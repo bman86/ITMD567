@@ -1,39 +1,89 @@
 package com.brentmennen.Entity;
 
-        import java.util.HashMap;
-        import java.util.Map;
-        import com.fasterxml.jackson.annotation.JsonAnyGetter;
-        import com.fasterxml.jackson.annotation.JsonAnySetter;
-        import com.fasterxml.jackson.annotation.JsonIgnore;
-        import com.fasterxml.jackson.annotation.JsonInclude;
-        import com.fasterxml.jackson.annotation.JsonProperty;
-        import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-        import org.apache.commons.lang3.builder.ToStringBuilder;
+import java.util.HashMap;
+import java.util.Map;
 
-        import javax.persistence.Embeddable;
+import com.fasterxml.jackson.annotation.*;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
+import javax.persistence.Embeddable;
+import javax.persistence.Embedded;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "dateTime"
+        "1. open",
+        "2. high",
+        "3. low",
+        "4. close",
+        "5. volume"
 })
 @Embeddable
 public class TimeSeries1min {
 
-    @JsonProperty("dateTime")
-    private DateTime dateTime;
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    @JsonProperty("1. open")
+    private String _1Open;
+    @JsonProperty("2. high")
+    private String _2High;
+    @JsonProperty("3. low")
+    private String _3Low;
+    @JsonProperty("4. close")
+    private String _4Close;
+    @JsonProperty("5. volume")
+    private String _5Volume;
+    //@JsonIgnore
+    //private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    @JsonProperty("dateTime")
-    public DateTime getDateTime() {
-        return dateTime;
+    @JsonProperty("1. open")
+    public String get1Open() {
+        return _1Open;
     }
 
-    @JsonProperty("dateTime")
-    public void setDateTime(DateTime dateTime) {
-        this.dateTime = dateTime;
+    @JsonProperty("1. open")
+    public void set1Open(String _1Open) {
+        this._1Open = _1Open;
     }
 
+    @JsonProperty("2. high")
+    public String get2High() {
+        return _2High;
+    }
+
+    @JsonProperty("2. high")
+    public void set2High(String _2High) {
+        this._2High = _2High;
+    }
+
+    @JsonProperty("3. low")
+    public String get3Low() {
+        return _3Low;
+    }
+
+    @JsonProperty("3. low")
+    public void set3Low(String _3Low) {
+        this._3Low = _3Low;
+    }
+
+    @JsonProperty("4. close")
+    public String get4Close() {
+        return _4Close;
+    }
+
+    @JsonProperty("4. close")
+    public void set4Close(String _4Close) {
+        this._4Close = _4Close;
+    }
+
+    @JsonProperty("5. volume")
+    public String get5Volume() {
+        return _5Volume;
+    }
+
+    @JsonProperty("5. volume")
+    public void set5Volume(String _5Volume) {
+        this._5Volume = _5Volume;
+    }
+/*
     @JsonAnyGetter
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
@@ -43,117 +93,20 @@ public class TimeSeries1min {
     public void setAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
     }
-
+*/
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("dateTime", dateTime).append("additionalProperties", additionalProperties).toString();
+        return new ToStringBuilder(this).append("_1Open", _1Open).append("_2High", _2High).append("_3Low", _3Low).append("_4Close", _4Close).append("_5Volume", _5Volume).toString();
     }
 
     public TimeSeries1min(){}
 
-    public TimeSeries1min(DateTime dateTime, Map<String, Object> additionalProperties) {
-        this.dateTime = dateTime;
-        this.additionalProperties = additionalProperties;
+    public TimeSeries1min(String _1Open, String _2High, String _3Low, String _4Close, String _5Volume) {
+        super();
+        this._1Open = _1Open;
+        this._2High = _2High;
+        this._3Low = _3Low;
+        this._4Close = _4Close;
+        this._5Volume = _5Volume;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
-
-
-import javax.persistence.Embeddable;
-
-@JsonIgnoreProperties(ignoreUnknown = true)
-@Embeddable
-public abstract class TimeSeries {
-
-    @JsonProperty("1. open")
-    private String open;
-
-    @JsonProperty("2. high")
-    private String high;
-
-    @JsonProperty("3. low")
-    private String low;
-
-    @JsonProperty("4. close")
-    private String close;
-
-    @JsonProperty("5. volume")
-    private String volume;
-
-    public String getOpen() {
-        return open;
-    }
-
-    public void setOpen(String open) {
-        this.open = open;
-    }
-
-    public String getHigh() {
-        return high;
-    }
-
-    public void setHigh(String high) {
-        this.high = high;
-    }
-
-    public String getLow() {
-        return low;
-    }
-
-    public void setLow(String low) {
-        this.low = low;
-    }
-
-    public String getClose() {
-        return close;
-    }
-
-    public void setClose(String close) {
-        this.close = close;
-    }
-
-    public String getVolume() {
-        return volume;
-    }
-
-    public void setVolume(String volume) {
-        this.volume = volume;
-    }
-
-    //@Override
-    //public String toString() {
-      //  return "open: " + open +
-           //     ",high: " + high +
-          //      ",low: " + low +
-        //        ",close: " + close +
-      //          ", volume: " + volume;
-    //}
-
-    public TimeSeries(){}
-
-    public TimeSeries(String open, String high, String low, String close, String volume) {
-        this.open = open;
-        this.high = high;
-        this.low = low;
-        this.close = close;
-        this.volume = volume;
-    }
-}
-*/
-

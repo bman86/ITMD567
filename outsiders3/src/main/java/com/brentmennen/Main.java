@@ -4,6 +4,7 @@ import com.brentmennen.Entity.Live;
 import com.brentmennen.Service.LiveService;
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.boot.CommandLineRunner;
@@ -15,10 +16,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.List;
-//import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.annotation.Scheduled;
 
 @SpringBootApplication
-//@EnableScheduling
+@EnableScheduling
 public class Main {
 
     public static void main(String[] args) throws Exception {
@@ -27,13 +29,16 @@ public class Main {
 
     @Bean
     public CommandLineRunner runner(LiveService liveService) {
+
         return args -> {
 
             ObjectMapper mapper = new ObjectMapper();
             //Live obj1 = mapper.readValue(new URL("https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=demo"), Live.class);
+            mapper.enable(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY);
 
             TypeReference<List<Live>> typeReference = new TypeReference<List<Live>>(){};
             InputStream input = new URL("https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=demo").openStream();
+            System.out.println("opened!" + input);
 
 
             try {

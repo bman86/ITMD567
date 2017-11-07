@@ -1,19 +1,14 @@
 package com.brentmennen.Entity;
 
+        import com.fasterxml.jackson.annotation.*;
         import org.apache.commons.lang3.builder.ToStringBuilder;
 
         import java.util.HashMap;
         import java.util.Map;
-        import com.fasterxml.jackson.annotation.JsonAnyGetter;
-        import com.fasterxml.jackson.annotation.JsonAnySetter;
-        import com.fasterxml.jackson.annotation.JsonIgnore;
-        import com.fasterxml.jackson.annotation.JsonInclude;
-        import com.fasterxml.jackson.annotation.JsonProperty;
-        import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
         import javax.persistence.Embeddable;
-        import javax.persistence.Embedded;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
         "1. Information",
@@ -38,8 +33,8 @@ public class MetaData {
     private String _5OutputSize;
     @JsonProperty("6. Time Zone")
     private String _6TimeZone;
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    //@JsonIgnore
+    //private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     @JsonProperty("1. Information")
     public String get1Information() {
@@ -101,7 +96,7 @@ public class MetaData {
         this._6TimeZone = _6TimeZone;
     }
 
-    @JsonAnyGetter
+   /* @JsonAnyGetter
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
     }
@@ -110,22 +105,22 @@ public class MetaData {
     public void setAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
     }
-
+    */
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("_1Information", _1Information).append("_2Symbol", _2Symbol).append("_3LastRefreshed", _3LastRefreshed).append("_4Interval", _4Interval).append("_5OutputSize", _5OutputSize).append("_6TimeZone", _6TimeZone).append("additionalProperties", additionalProperties).toString();
+        return new ToStringBuilder(this).append("_1Information", _1Information).append("_2Symbol", _2Symbol).append("_3LastRefreshed", _3LastRefreshed).append("_4Interval", _4Interval).append("_5OutputSize", _5OutputSize).append("_6TimeZone", _6TimeZone).toString();
     }
 
     public MetaData() {}
 
-    public MetaData(String _1Information, String _2Symbol, String _3LastRefreshed, String _4Interval, String _5OutputSize, String _6TimeZone, Map<String, Object> additionalProperties) {
+    public MetaData(String _1Information, String _2Symbol, String _3LastRefreshed, String _4Interval, String _5OutputSize, String _6TimeZone) {
+        super();
         this._1Information = _1Information;
         this._2Symbol = _2Symbol;
         this._3LastRefreshed = _3LastRefreshed;
         this._4Interval = _4Interval;
         this._5OutputSize = _5OutputSize;
         this._6TimeZone = _6TimeZone;
-        this.additionalProperties = additionalProperties;
     }
 }
 

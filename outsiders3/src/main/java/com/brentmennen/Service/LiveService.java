@@ -23,7 +23,7 @@ public class LiveService {
         return liveRepository.save(live);
     }
 
-    public void save(List<Live> users) {
-        liveRepository.save(users);
+    public void save(List<Live> lives) {
+        liveRepository.save(lives);
     }
 }
