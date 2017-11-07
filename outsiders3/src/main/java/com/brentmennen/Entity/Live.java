@@ -1,11 +1,7 @@
 package com.brentmennen.Entity;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import com.fasterxml.jackson.annotation.*;
 import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
@@ -37,7 +33,7 @@ public class Live {
     private MetaData metaData;
     @JsonProperty("Time Series (1min)")
     @Embedded
-    private TimeSeries1min timeSeries1min;
+    private DateTime dateTime;
     //@JsonIgnore
     //private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -60,13 +56,13 @@ public class Live {
     }
 
     @JsonProperty("Time Series (1min)")
-    public TimeSeries1min getTimeSeries1min() {
-        return timeSeries1min;
+    public DateTime getDateTime() {
+        return dateTime;
     }
 
     @JsonProperty("Time Series (1min)")
-    public void setTimeSeries1min(TimeSeries1min timeSeries1min) {
-        this.timeSeries1min = timeSeries1min;
+    public void setDateTime(DateTime dateTime) {
+        this.dateTime = dateTime;
     }
 
     //@JsonAnyGetter
@@ -81,15 +77,15 @@ public class Live {
 
     public Live() {}
 
-    public Live(MetaData metaData, TimeSeries1min timeSeries1min) {
+    public Live(MetaData metaData, DateTime dateTime) {
         super();
         this.metaData = metaData;
-        this.timeSeries1min = timeSeries1min;
+        this.dateTime = dateTime;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("metaData", metaData).append("timeSeries1min", timeSeries1min).toString();
+        return new ToStringBuilder(this).append("metaData", metaData).append("dateTime", dateTime).toString();
     }
 
 }

@@ -10,80 +10,29 @@ import javax.persistence.Embeddable;
 import javax.persistence.Embedded;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-@JsonInclude(JsonInclude.Include.NON_NULL)
+//@JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "1. open",
-        "2. high",
-        "3. low",
-        "4. close",
-        "5. volume"
+        "2017-11-06 16:00:00"
 })
 @Embeddable
 public class TimeSeries1min {
 
-    @JsonProperty("1. open")
-    private String _1Open;
-    @JsonProperty("2. high")
-    private String _2High;
-    @JsonProperty("3. low")
-    private String _3Low;
-    @JsonProperty("4. close")
-    private String _4Close;
-    @JsonProperty("5. volume")
-    private String _5Volume;
+    @JsonProperty("2017-11-06 16:00:00")
+    @Embedded
+    private DateTime dateTime;
     //@JsonIgnore
     //private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    @JsonProperty("1. open")
-    public String get1Open() {
-        return _1Open;
+    @JsonProperty("2017-11-06 16:00:00")
+    public DateTime getDateTime() {
+        return dateTime;
     }
 
-    @JsonProperty("1. open")
-    public void set1Open(String _1Open) {
-        this._1Open = _1Open;
+    @JsonProperty("2017-11-06 16:00:00")
+    public void setDateTime(DateTime dateTime) {
+        this.dateTime = dateTime;
     }
-
-    @JsonProperty("2. high")
-    public String get2High() {
-        return _2High;
-    }
-
-    @JsonProperty("2. high")
-    public void set2High(String _2High) {
-        this._2High = _2High;
-    }
-
-    @JsonProperty("3. low")
-    public String get3Low() {
-        return _3Low;
-    }
-
-    @JsonProperty("3. low")
-    public void set3Low(String _3Low) {
-        this._3Low = _3Low;
-    }
-
-    @JsonProperty("4. close")
-    public String get4Close() {
-        return _4Close;
-    }
-
-    @JsonProperty("4. close")
-    public void set4Close(String _4Close) {
-        this._4Close = _4Close;
-    }
-
-    @JsonProperty("5. volume")
-    public String get5Volume() {
-        return _5Volume;
-    }
-
-    @JsonProperty("5. volume")
-    public void set5Volume(String _5Volume) {
-        this._5Volume = _5Volume;
-    }
-/*
+    /*
     @JsonAnyGetter
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
@@ -96,17 +45,13 @@ public class TimeSeries1min {
 */
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("_1Open", _1Open).append("_2High", _2High).append("_3Low", _3Low).append("_4Close", _4Close).append("_5Volume", _5Volume).toString();
+        return new ToStringBuilder(this).append("2017-11-06 16:00:00", dateTime).toString();
     }
 
     public TimeSeries1min(){}
 
-    public TimeSeries1min(String _1Open, String _2High, String _3Low, String _4Close, String _5Volume) {
+    public TimeSeries1min(DateTime dateTime) {
         super();
-        this._1Open = _1Open;
-        this._2High = _2High;
-        this._3Low = _3Low;
-        this._4Close = _4Close;
-        this._5Volume = _5Volume;
+        this.dateTime = dateTime;
     }
 }

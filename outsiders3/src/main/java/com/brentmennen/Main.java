@@ -33,7 +33,7 @@ public class Main {
         return args -> {
 
             ObjectMapper mapper = new ObjectMapper();
-            //Live obj1 = mapper.readValue(new URL("https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=demo"), Live.class);
+            //Live mapper = new ObjectMapper().readValue("https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=demo", Live.class);
             mapper.enable(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY);
 
             TypeReference<List<Live>> typeReference = new TypeReference<List<Live>>(){};
