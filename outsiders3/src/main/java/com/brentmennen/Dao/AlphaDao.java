@@ -32,7 +32,7 @@ public class AlphaDao implements AlphaInterface {
             alphaPojo.setId(resultSet.getInt("id"));
             metaData.setMetaData(resultSet.getString("symbol"));
             timeSeries.setOpen(resultSet.getString("open"));
-            return
+            return alphaPojo;
 
         }
 
