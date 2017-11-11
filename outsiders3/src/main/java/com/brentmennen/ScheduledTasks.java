@@ -28,20 +28,9 @@ public class ScheduledTasks {
 
         log.info("The time is now {}", dateFormat.format(new Date()));
         ObjectMapper mapper = new ObjectMapper();
-        //Live obj1 = mapper.readValue(new URL("https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=demo"), Live.class);
         mapper.enable(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY);
 
-        /*
-        TypeReference<List<Live>> typeReference = new TypeReference<List<Live>>(){};
-        InputStream input = null;
-        try {
-            input = new URL("https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=demo").openStream();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        System.out.println("opened!" + input);
 
-*/
     }
 
 }
