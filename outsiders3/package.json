@@ -1,0 +1,24 @@
+{
+  "name": "outsiders3",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/main/webapp/views/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "\"Brent Mennen\"",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-resource": "^1.6.6",
+    "gulp": "^3.9.1",
+    "node": "^9.1.0",
+    "server": "^1.0.4"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "outsiders"
+  ],
+  "description": ""
+
+}
