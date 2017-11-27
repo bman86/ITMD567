@@ -1,6 +1,5 @@
 package com.brentmennen.Service;
 
-import com.brentmennen.Dao.MetaDataDao;
 import com.brentmennen.Dao.MetaDataInterface;
 import com.brentmennen.Entity.MetaData;
 import com.brentmennen.Entity.TimeSeries;

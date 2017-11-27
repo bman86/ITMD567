@@ -1,14 +1,20 @@
 {
-  "name": "outsiders3",
+  "name": "frontend",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Frontend Angular",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
   },
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Brent Mennen <bmennen@hawk.iit.edu>",
+  "license": "UNLICENSED",
   "dependencies": {
-    "angular": "^1.6.6"
+    "express": "^4.14.0",
+    "express-rate-limit": "^2.6.0",
+    "server": "^1.0.5"
   }
 }

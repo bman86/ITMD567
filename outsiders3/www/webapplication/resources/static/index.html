@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Stocks</title>
+<script src="../../../node_modules/angular/angular.js"></script>
+
+</head>
+<body ng-app='corsAng'>
+<div ng-controller="cntrl">
+
+    <fieldset>
+
+        <legend>Stocks</legend>
+        <label for="foo">foo:</label>
+        <input type="text" ng-model="foo" />
+        <br />
+        <button ng-click="getData()">GET Request</button>
+</fieldset>
+<br />
+
+    <label for="echo">Echo'd Response</label>
+    <textarea name="echo" ng-model="response" disabled="disabled"></textarea>
+    <label for="full">Full Response</label>
+    <textarea name="full" ng-model="fullResponse" disabled="disabled"></textarea>
+</div>
+</div>
+<script>
+
+angular.module('corsAng', [require('angular-resource')])
+.controller('cntrl', function($scope, $http) {
+    $scope.foo = "text";
+    $scope.response = [];
+    $scope.fullResponse = [];
+
+    $scope.getData = function() {
+      var data = $.param({
+      json: JSON.stringify({
+      foo: $scope.stocks
+      })
+      });
+
+      $http({
+      url: "//localhost:8080/stocks",
+      method: "GET",
+      data: [],
+      params: {foo: $scope.stocks}
+      }).success(function(data, status) {
+          $scope.response = "GET Response: " + JSON.stringify(data.args);
+          $scope.fullResponse = JSON.stringify(data);
+        
+      });
+    };
+
+
+  
+})
+
+
+</script>
+</body>
+</html>
