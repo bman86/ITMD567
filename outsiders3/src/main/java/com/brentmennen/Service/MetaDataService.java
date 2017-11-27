@@ -17,5 +17,10 @@ public class MetaDataService {
     public void insertMetaData(MetaData metaData, TimeSeries timeSeries) {
         this.metaDataInterface.insertMetaDataToDb(metaData, timeSeries);
     }
+
+    public MetaData getRecentMetaData() {
+        return this.metaDataInterface.getRecentMetaData();
+    }
+
 }
 

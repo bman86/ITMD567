@@ -31,7 +31,8 @@ public class Parser {
     @Scheduled(initialDelay = 0, fixedRate = 300000)
     public void parse() {
 
-        String JSON_URL = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=demo";
+
+        String JSON_URL = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=SVFVJ2TAO5NA6AFY";
 
 
         URL url = null;
