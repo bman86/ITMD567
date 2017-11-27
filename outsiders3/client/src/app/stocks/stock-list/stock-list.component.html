@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <section>
+        <header class="header">
+          <div class="row">
+            <div class="col-md-4">
+              <h1>Stocks</h1>
+            </div>
+            <div class="col-md-6">
+          </div>
+        </div>
+        </header>
+      </section>
+
+      <section class="main">
+
+        <table class="table">
+          <thead>
+          <tr>
+            <th>ID</th>
+            <th>Stock</th>
+            <th>Own</th>
+            <th>Entry Price</th>
+            <th>Optimism</th>
+            <th>Target Price</th>
+            <th>Investment Time Frame</th>
+            <th></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let foo of stocks">
+            <th scope="row">{{foo.id}}</th>
+            <td>{{foo.symbl}}</td>
+            <td>{{foo.own}}</td>
+            <td>{{foo.entryPrice}}</td>
+            <td>{{foo.up}}</td>
+            <td>{{foo.target}}</td>
+            <td>{{foo.time}}</td>
+            <td>
+              <button type="button" class="btn btn-success" (click)="redirectEditStockPage(foo)">Edit</button>
+              <button type="button" class="btn btn-danger" (click)="deleteStock(foo)">Delete</button>
+            </td>
+          </tr>
+
+          </tbody>
+        </table>
+        <div class="col-md-2">
+          <button type="button" class="btn btn-primary" (click)="redirectNewStockPage()">New Stock Pick</button>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
