@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Stock} from "../Stock";
 import {StockService} from "../stock.service";
 import { Router } from '@angular/router';
+import {StockLive} from "../stock-live";
 
 @Component({
   selector: 'app-stock-list',
@@ -12,11 +13,13 @@ import { Router } from '@angular/router';
 export class StockListComponent implements OnInit {
 
   private stocks: Stock[];
+  private stockLive: StockLive;
 
   constructor(private router: Router, private stockService: StockService) { }
 
   ngOnInit() {
     this.getAllStocks();
+    this.getLive();
   }
 
   getAllStocks(){
@@ -26,6 +29,16 @@ export class StockListComponent implements OnInit {
       },
       err => {console.log(err);}
     );
+  }
+
+  getLive(){
+    this.stockService.findLive().subscribe(
+      stocklive => {
+        this.stockLive = stocklive;
+      },
+    err => {console.log(err);}
+
+  )
   }
 
   redirectNewStockPage() {

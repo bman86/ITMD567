@@ -4,7 +4,6 @@ import com.brentmennen.Entity.*;
 import com.brentmennen.Service.MetaDataService;
 import groovy.json.JsonSlurper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
@@ -20,7 +19,7 @@ import java.util.Set;
 @Component
 public class Parser {
 
-
+    AggStock aggStock;
 
     public Parser() {
 

@@ -1,6 +1,8 @@
 package com.brentmennen.Dao;
 
 
+import com.brentmennen.Entity.AggStock;
+import com.brentmennen.Entity.AggStockFactory;
 import com.brentmennen.Entity.Stock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -49,6 +51,17 @@ public class PostgresStockDao implements StockDao {
         return stock;
     }
 
+    //allows external get that passes symbl variable to access data for specific stock
+    @Override
+    public Collection<Stock> getStockBySymbl(String symbl) {
+        final String sql = "SELECT * FROM outsiders WHERE symbl = ?";
+        final List<Stock> stocks = jdbcTemplate.query(sql, new StockRowMapper(), symbl);
+        System.out.println("Stocks from dao!" + stocks);
+
+        AggStock aggStock = new AggStockFactory().construct(stocks);
+
+        return stocks;
+    }
     @Override
     public void removeStockById(int id) {
         final String sql = "DELETE FROM outsiders WHERE id = ?";

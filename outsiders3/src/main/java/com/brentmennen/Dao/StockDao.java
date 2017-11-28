@@ -9,9 +9,12 @@ public interface StockDao {
 
     Stock getStockById(int id);
 
+    Collection<Stock> getStockBySymbl(String symbl);
+
     void removeStockById(int id);
 
     void updateStock(Stock stock);
 
     void insertStockToDb(Stock stock);
+
 }

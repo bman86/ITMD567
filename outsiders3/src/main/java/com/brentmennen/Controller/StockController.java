@@ -28,6 +28,13 @@ public class StockController {
     }
 
     @CrossOrigin(origins = "http://localhost:4200")
+    @RequestMapping(value = "/symbol/{symbl}", method = RequestMethod.GET)
+    public Collection<Stock> getStockBySymbl(@PathVariable("symbl") String symbl) {
+        return stockService.getStockBySymbl(symbl);
+
+    }
+
+    @CrossOrigin(origins = "http://localhost:4200")
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public void deleteStockById(@PathVariable("id") int id) {
         stockService.removeStockById(id);
