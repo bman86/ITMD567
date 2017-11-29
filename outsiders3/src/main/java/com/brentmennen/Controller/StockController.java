@@ -1,5 +1,6 @@
 package com.brentmennen.Controller;
 
+import com.brentmennen.Entity.AggStock;
 import com.brentmennen.Entity.Stock;
 import com.brentmennen.Service.StockService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +30,7 @@ public class StockController {
 
     @CrossOrigin(origins = "http://localhost:4200")
     @RequestMapping(value = "/symbol/{symbl}", method = RequestMethod.GET)
-    public Collection<Stock> getStockBySymbl(@PathVariable("symbl") String symbl) {
+    public AggStock getStockBySymbl(@PathVariable("symbl") String symbl) {
         return stockService.getStockBySymbl(symbl);
 
     }

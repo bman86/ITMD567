@@ -1,6 +1,7 @@
 package com.brentmennen.Service;
 
 import com.brentmennen.Dao.StockDao;
+import com.brentmennen.Entity.AggStock;
 import com.brentmennen.Entity.Stock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -25,7 +26,7 @@ public class StockService {
         return this.stockDao.getStockById(id);
     }
 
-    public Collection<Stock> getStockBySymbl(String symbl) {
+    public AggStock getStockBySymbl(String symbl) {
         return this.stockDao.getStockBySymbl(symbl);
     }
 

@@ -2,6 +2,7 @@ package com.brentmennen;
 
 import com.brentmennen.Entity.*;
 import com.brentmennen.Service.MetaDataService;
+import com.brentmennen.Service.StockService;
 import groovy.json.JsonSlurper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -19,20 +20,39 @@ import java.util.Set;
 @Component
 public class Parser {
 
-    AggStock aggStock;
+    @Autowired
+    StockService stockService;
 
-    public Parser() {
+    private String param;
 
+    public Parser(String param) {
+        this.param = param;
     }
+
+    public String getParam() {
+        return param;
+    }
+
+    public void setParam(String param) {
+        this.param = param;
+    }
+
+    public Parser() {this.param = "MSFT";}
+
+
+
+
     @Autowired
     MetaDataService metaDataService;
 
-    @Scheduled(initialDelay = 0, fixedRate = 300000)
+    @Scheduled(initialDelay = 0, fixedRate = 10000)
     public void parse() {
 
+        Parser parser = new Parser();
+        System.out.println("param!" + param);
+        System.out.println("this.param!" + this.param);
 
-        String JSON_URL = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=SVFVJ2TAO5NA6AFY";
-
+        String JSON_URL = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=" + param + "&interval=1min&apikey=SVFVJ2TAO5NA6AFY";
 
         URL url = null;
             try {
@@ -98,7 +118,6 @@ public class Parser {
 
 
 
-
-    }
+}
 
 

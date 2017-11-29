@@ -1,5 +1,8 @@
 package com.brentmennen.Entity;
 
+
+import com.brentmennen.Parser;
+
 import java.util.*;
 import java.util.stream.Collectors;
 

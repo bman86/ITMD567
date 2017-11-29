@@ -1,5 +1,6 @@
 package com.brentmennen.Dao;
 
+import com.brentmennen.Entity.AggStock;
 import com.brentmennen.Entity.Stock;
 
 import java.util.Collection;
@@ -9,7 +10,7 @@ public interface StockDao {
 
     Stock getStockById(int id);
 
-    Collection<Stock> getStockBySymbl(String symbl);
+    AggStock getStockBySymbl(String symbl);
 
     void removeStockById(int id);
 
