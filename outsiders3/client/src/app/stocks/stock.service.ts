@@ -5,6 +5,7 @@ import 'rxjs/add/operator/catch';
 import { Observable } from "rxjs/Observable";
 import {HttpClient} from "@angular/common/http";
 import {StockLive} from "./stock-live";
+import {StockSymbol} from "./StockSymbol";
 
 @Injectable()
 export class StockService {
@@ -19,6 +20,12 @@ export class StockService {
       return this.http.get(this.apiUrl + '/' + id)
         .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
     }
+
+    //method to get stock by symbol for aggregate not on user level
+  findBySymbol(stkSymbol: String): Observable<StockSymbol> {
+    return this.http.get(this.apiUrl + '/symbol/' + stkSymbol)
+      .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
+  }
 
     //method to get live quote from seperate table
     findLive(): Observable<StockLive> {
