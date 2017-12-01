@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { StockSymbol} from "../StockSymbol";
 import { StockService} from "../stock.service";
 import {ActivatedRoute, Router} from "@angular/router";
+import {StockLive} from "../stock-live";
 
 @Component({
   selector: 'app-stock-symbol',
@@ -13,6 +14,8 @@ export class StockSymbolComponent implements OnInit {
 
   stkSymbol: string;
   stockSymbol: StockSymbol;
+  private stockLive: StockLive;
+
 
   private sub: any;
 
@@ -21,6 +24,7 @@ export class StockSymbolComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.getLive();
     this.sub = this.route.params.subscribe(params => {
       this.stkSymbol = params['symbl']
     });
@@ -37,5 +41,14 @@ export class StockSymbolComponent implements OnInit {
       );
     }
 
+  }
+  getLive(){
+    this.stockService.findLive().subscribe(
+      stocklive => {
+        this.stockLive = stocklive;
+      },
+      err => {console.log(err);}
+
+    )
   }
 }

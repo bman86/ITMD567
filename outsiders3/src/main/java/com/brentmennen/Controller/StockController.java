@@ -2,6 +2,7 @@ package com.brentmennen.Controller;
 
 import com.brentmennen.Entity.AggStock;
 import com.brentmennen.Entity.Stock;
+import com.brentmennen.Parser;
 import com.brentmennen.Service.StockService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -15,6 +16,9 @@ public class StockController {
 
     @Autowired
     private StockService stockService;
+
+    @Autowired
+    private Parser parser;
 
     @CrossOrigin(origins = "http://localhost:4200")
     @RequestMapping(method = RequestMethod.GET)
@@ -34,6 +38,7 @@ public class StockController {
         return stockService.getStockBySymbl(symbl);
 
     }
+
 
     @CrossOrigin(origins = "http://localhost:4200")
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)

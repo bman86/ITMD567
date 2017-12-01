@@ -60,6 +60,7 @@ public class PostgresStockDao implements StockDao {
         final List<Stock> stocks = jdbcTemplate.query(sql, new StockRowMapper(), symbl);
 
         AggStock aggStock = new AggStockFactory().construct(stocks);
+
         return aggStock;
     }
     @Override

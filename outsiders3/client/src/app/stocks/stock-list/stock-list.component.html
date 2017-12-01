@@ -14,14 +14,11 @@
       </section>
 
       <section class="main">
-        <div>
-          <h3>{{stockLive.open}}</h3>
-        </div>
+
 
         <table class="table">
           <thead>
           <tr>
-            <th>ID</th>
             <th>Stock</th>
             <th>Own</th>
             <th>Entry Price</th>
@@ -33,8 +30,7 @@
           </thead>
           <tbody>
           <tr *ngFor="let foo of stocks">
-            <th scope="row">{{foo.id}}</th>
-            <td>{{foo.symbl}}</td>
+            <th scope="row">{{foo.symbl}}</th>
             <td>{{foo.own}}</td>
             <td>{{foo.entryPrice}}</td>
             <td>{{foo.up}}</td>

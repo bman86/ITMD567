@@ -3,6 +3,7 @@ import {Stock} from "../Stock";
 import {StockService} from "../stock.service";
 import { Router } from '@angular/router';
 import {StockLive} from "../stock-live";
+import { ChangeDetectorRef } from '@angular/core';
 
 @Component({
   selector: 'app-stock-list',
@@ -15,17 +16,22 @@ export class StockListComponent implements OnInit {
   private stocks: Stock[];
   private stockLive: StockLive;
 
-  constructor(private router: Router, private stockService: StockService) { }
+  constructor(private router: Router, private stockService: StockService, private ref: ChangeDetectorRef) { }
 
   ngOnInit() {
     this.getAllStocks();
     this.getLive();
+    this.ref.detectChanges();
+
+
   }
 
   getAllStocks(){
     this.stockService.findAll().subscribe(
       stocks => {
         this.stocks = stocks;
+        this.ref.detectChanges();
+
       },
       err => {console.log(err);}
     );
@@ -56,6 +62,7 @@ export class StockListComponent implements OnInit {
       this.stockService.deleteStockById(stock.id).subscribe(
         response => {
           this.getAllStocks();
+          this.ref.detectChanges();
           this.router.navigate(['/stock']);
           console.log('done', response);
         }

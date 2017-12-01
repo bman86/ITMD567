@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>UserApp</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Welcome to Outsider Trading!</h1>
+          <p>Outsider Trading is here to offer insigts into how you, and other common investors believe a stock will perform in the future. We allow you to see what other investors think the target price should be for a stock you may be interested in. Investment bankers on Wall Street no longer have the insider edge!</p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        </div>
+      </div>
+
+    <div class="container">
+      <div class="starter-template">
+        <h1>Select From the Following Popular Stocks</h1>
+        <p class="lead">You can view the average target price, entry price, and current stock price for your selection.<br> </p>
+      </div>
+    </div>
+     <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+              <div class="col-lg-2">
+                <img class="rounded-circle" src="../../assets/images/apple_logo_PNG19679.png" alt="Generic placeholder image" width="140" height="140">
+                <h2 routerLink="/stock/symbol/aapl" routerLinkActive="active">Apple</h2>
+
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-2">
+                <img class="rounded-circle" src="../../assets/images/new-logo-microsoft-alt-icon.png" alt="Generic placeholder image" width="140" height="140">
+                <h2 routerLink="/stock/symbol/msft" routerLinkActive="active">Microsoft</h2>
+
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-2">
+                <img class="rounded-circle" src="../../assets/images/amazon.png" alt="Generic placeholder image" width="140" height="140">
+                <h2 routerLink="/stock/symbol/amzn" routerLinkActive="active">Amazon</h2>
+
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-2">
+                <img class="rounded-circle" src="../../assets/images/network-facebook-logo-share-square-media-social-icon.png" alt="Generic placeholder image" width="140" height="140">
+                <h2 routerLink="/stock/symbol/fb" routerLinkActive="active">Facebook</h2>
+
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+      </div>
+
+  </main>
+
+</body>
+</html>
