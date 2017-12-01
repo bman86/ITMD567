@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="580b10ec-2732-49a8-8c03-36f746b0bd94" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/package.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../outsiderJhipster" afterPath="$PROJECT_DIR$/../outsiderJhipster" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.gitignore" afterPath="$PROJECT_DIR$/client/.gitignore" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -103,8 +100,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -294,11 +291,6 @@
               <item name="outsiders3" type="b2602c69:ProjectViewProjectNode" />
               <item name="outsiders3" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="outsiders3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="outsiders3" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -486,12 +478,12 @@
       <workItem from="1511762245499" duration="13024000" />
       <workItem from="1511808635845" duration="12288000" />
       <workItem from="1511825932402" duration="48996000" />
-      <workItem from="1512079096655" duration="24291000" />
+      <workItem from="1512079096655" duration="24588000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246057000" />
+    <option name="totallyTimeSpent" value="246354000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="5" y="23" width="1440" height="813" extended-state="0" />
@@ -986,8 +978,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding />
         </state>
       </provider>
