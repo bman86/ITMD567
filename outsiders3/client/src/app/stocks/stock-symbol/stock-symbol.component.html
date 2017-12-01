@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <section>
+        <header class="header">
+          <div class="row">
+            <div class="jumbotron">
+              <h1 class="display-3">Outsider Selected Data - {{stockSymbol.stkSymbol}}</h1>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+        </header>
+      </section>
+
+      <section class="main">
+
+        <div class="row marketing">
+          <div class="col-lg-6">
+            <h4>Current Stock Price</h4>
+            <p>171.85</p>
+
+            <h4>Average Target Price</h4>
+            <p>{{stockSymbol.avgTarget}}</p>
+
+            <h4>Average Entry Price</h4>
+            <p>{{stockSymbol.avgEntry}}</p>
+
+
+          </div>
+
+          <div class="col-lg-6">
+            <h4>% of Investors Who Believe the Stock Will Go Up</h4>
+            <p>{{stockSymbol.percentUp}}%</p>
+
+            <h4>% of Investors Who Are Long Term</h4>
+            <p>{{stockSymbol.percentTime}}%</p>
+
+            <h4>% of Investers Who Already Own This Stock</h4>
+            <p>{{stockSymbol.percentOwn}}%</p>
+
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </div>
+</div>

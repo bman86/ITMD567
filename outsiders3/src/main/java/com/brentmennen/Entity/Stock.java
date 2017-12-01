@@ -77,4 +77,17 @@ public class Stock {
     public void setTime(String time) {
         this.time = time;
     }
+
+    @Override
+    public String toString() {
+        return "Stock{" +
+                "id=" + id +
+                ", symbl='" + symbl + '\'' +
+                ", own=" + own +
+                ", entryPrice=" + entryPrice +
+                ", up=" + up +
+                ", target=" + target +
+                ", time='" + time + '\'' +
+                '}';
+    }
 }

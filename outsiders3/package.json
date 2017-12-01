@@ -1,0 +1,20 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Frontend Angular",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Brent Mennen <bmennen@hawk.iit.edu>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-rate-limit": "^2.6.0",
+    "server": "^1.0.5"
+  }
+}

@@ -1,12 +1,12 @@
 package com.brentmennen.Dao;
 
 
-import com.brentmennen.Entity.Stock;
+import com.brentmennen.Entity.*;
+import com.brentmennen.Parser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Collection;
@@ -17,6 +17,8 @@ public class PostgresStockDao implements StockDao {
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
+
+
 
     private static class StockRowMapper implements RowMapper<Stock>{
 
@@ -50,6 +52,17 @@ public class PostgresStockDao implements StockDao {
         return stock;
     }
 
+    //allows external get that passes symbl variable to access data for specific stock
+    @Override
+    public AggStock getStockBySymbl(String symbl) {
+
+        final String sql = "SELECT * FROM outsiders WHERE symbl = ?";
+        final List<Stock> stocks = jdbcTemplate.query(sql, new StockRowMapper(), symbl);
+
+        AggStock aggStock = new AggStockFactory().construct(stocks);
+
+        return aggStock;
+    }
     @Override
     public void removeStockById(int id) {
         final String sql = "DELETE FROM outsiders WHERE id = ?";

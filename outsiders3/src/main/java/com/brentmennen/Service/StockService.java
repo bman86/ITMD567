@@ -1,6 +1,7 @@
 package com.brentmennen.Service;
 
 import com.brentmennen.Dao.StockDao;
+import com.brentmennen.Entity.AggStock;
 import com.brentmennen.Entity.Stock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -15,12 +16,18 @@ public class StockService {
     @Qualifier("postgres")
     private StockDao stockDao;
 
+
+
     public Collection<Stock> getAllStocks(){
         return this.stockDao.getAllStocks();
     }
 
     public Stock getStockById(int id) {
         return this.stockDao.getStockById(id);
+    }
+
+    public AggStock getStockBySymbl(String symbl) {
+        return this.stockDao.getStockBySymbl(symbl);
     }
 
     public void removeStockById(int id) {
@@ -34,4 +41,6 @@ public class StockService {
     public void insertStock(Stock stock) {
         this.stockDao.insertStockToDb(stock);
     }
+
+
 }
